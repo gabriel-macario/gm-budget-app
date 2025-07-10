@@ -4,6 +4,7 @@
   "version": "3.1.0",
   "private": true,
   "type": "module",
+  "homepage": "https://github.com/yourusername/gm-budget-app",
   "author": {
     "email": "kozackunisoft@gmail.com",
     "name": "Alex Kozack",
@@ -19,6 +20,7 @@
   "scripts": {
     "build": "npm run build -ws --if-present",
     "compile": "npm run build && electron-builder build --config electron-builder.mjs",
+    "compile-windows": "npm run build && electron-builder build --config electron-builder.mjs --win",
     "test": "npx playwright test ./tests/e2e.spec.ts",
     "start": "node packages/dev-mode.js",
     "typecheck": "npm run typecheck -ws --if-present",
@@ -30,10 +32,16 @@
     "@npmcli/map-workspaces": "4.0.2",
     "@playwright/test": "1.53.2",
     "@types/node": "24.0.10",
+    "autoprefixer": "^10.4.21",
     "create-vite": "7.0.1",
     "electron": "37.2.0",
     "electron-builder": "26.0.12",
     "glob": "11.0.3",
-    "playwright": "^1.53.1"
+    "playwright": "^1.53.1",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.11"
+  },
+  "dependencies": {
+    "@app/main": "*"
   }
 }
