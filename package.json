@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "@npmcli/map-workspaces": "4.0.2",
-    "@playwright/test": "1.53.2",
+    "@playwright/test": "1.55.0",
     "@types/node": "24.0.10",
     "autoprefixer": "^10.4.21",
     "create-vite": "7.0.1",
